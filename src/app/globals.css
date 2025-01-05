@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@layer components {
+  .footer_heading {
+    @apply text-lg text-[rgba(22,96,136,1)] font-bold underline mb-4;
+  }
+  .footer_link {
+    @apply text-base text-[rgba(22,96,136,1)] hover:underline cursor-pointer text-opacity-60 mb-3 w-fit;
+  }
+}
+
+
+
+.clip-banner {
+  clip-path: polygon(0% 0%, 85% 10%, 100% 100%, 0% 100%); /* Clip path for top-right corner */
+
+  border-top-right-radius: 700px; /* Apply border radius to the top-right */
+  
+  overflow: hidden; /* Ensure content doesn't overflow the rounded corner */
+}
+
+.clip-banners {
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%); /* Clip path adjusted for the bottom-right corner */
+  
+  border-bottom-right-radius: 700px; /* Apply border radius to the bottom-right */
+  
+  /* overflow: hidden;  */
+}
+
+
+.custom-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(136, 82, 206, 0.8),
+    rgba(166, 135, 206, 0.8),
+    rgba(199, 107, 188, 0.8),
+    rgba(245, 174, 237, 0.8)
+  );
+}
